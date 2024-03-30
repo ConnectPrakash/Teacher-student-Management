@@ -1,0 +1,65 @@
+.container {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.form-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form {
+  width: 48%; /* Adjust width as needed */
+}
+
+.list-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.list {
+  width: 48%; /* Adjust width as needed */
+}
+
+input, select, button {
+  width: calc(100% - 20px); /* Adjust width to accommodate margins */
+  margin-bottom: 10px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+li button {
+  margin-left: 10px;
+}
+
+@media (max-width: 600px) {
+  .form-container, .list-container {
+    flex-direction: column;
+  }
+}
